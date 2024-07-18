@@ -9,5 +9,4 @@ console.log(path.extname(__filename))
 console.log(path.parse(__filename))
 // juntar caminhos de arquivos 
 console.log(path.join(__dirname, "test", "teste.html"))
-
-
+//
