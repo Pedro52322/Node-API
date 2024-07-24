@@ -11,11 +11,11 @@ jobs:
       uses: ServiceNow/servicenow-devops-change@v3.0.0
       with:
         # Devops Integration Token
-        devops-integration-token: ${{ secrets.SN_DEVOPS_TOKEN }}
+        devops-integration-token: "nucNnbAX7BLuwkPY8mTzQVFZGbwbwEmO"
         # ServiceNow Instance URL
-        instance-url: ${{ secrets.SN_INSTANCE_URL }}
+        instance-url: "https://dev269477.service-now.com/"
         # Orchestration Tool Id
-        tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
+        tool-id: "e4ee4af5c32702102a5afb2ed40131ca"
         # GitHub Context
         context-github: "{}"
         # Display Name of the Job
