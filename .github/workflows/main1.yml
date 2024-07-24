@@ -17,7 +17,7 @@ jobs:
         # Orchestration Tool Id
         tool-id: "e4ee4af5c32702102a5afb2ed40131ca"
         # GitHub Context
-        context-github: ""
+        context-github: "github.ref"
         # Display Name of the Job
         job-name: 'ServiceNow DevOps Change'
         change-request: '{"attributes":{"requested_by":{"name": "Test User"},"assignment_group":{"name": "Change Approval Team"},"priority": "2","comments": "This is a sample pipeline script to be added in your change step","work_notes": "Update this to work_notes","start_date": "2023-09-07 11:59:59","end_date": "2023-09-09 11:59:59"}}'
