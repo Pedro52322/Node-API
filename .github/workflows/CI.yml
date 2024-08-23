@@ -11,19 +11,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-  change:
-    needs: build
-    name: ServiceNow DevOps Change
-    runs-on: ubuntu-latest
-    steps:
-      - name: ServiceNow Change
-        uses: ServiceNow/servicenow-devops-change@v3.0.0
-        with:
-          devops-integration-token: "imTImPCaSYRQTeb3BCuPU2zPIKHmLrOj"
-          instance-url: "https://dev269477.service-now.com"
-          tool-id: "f0c06f66c32f06102a5afb2ed4013100"
-          context-github: ${{ toJSON(github) }}
-          job-name: 'ServiceNow DevOps Change'
-          change-request: '{"attributes":{"requested_by":{"name": "Test User"},"assignment_group":{"name": "Change Approval Team"},"priority": "2","comments": "This is a sample pipeline script to be added in your change step","work_notes": "Update this to work_notes","start_date": "2023-09-07 11:59:59","end_date": "2023-09-09 11:59:59"}}'
-       
+  
         
