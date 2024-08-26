@@ -19,7 +19,8 @@ jobs:
       - name: ServiceNow Change
         uses: ServiceNow/servicenow-devops-change@v4.0.0
         with:
-          devops-integration-token: "7O48adV0HVjBg5tJDYYSMbeA5LarrH8S"
+          devops-integration-user-name: "devops.system"
+          devops-integration-user-password: "_D2_FoK7YIoOtm[k%c.VXW;.4}*;tHc)4}t5W)WvwI)n%1MI=oAmQfB;3&3Zeb:#pvf{gq;})ku80h:Qv"
           instance-url: "https://dev243757.service-now.com/"
           tool-id: "c6e0b4348350121084a331b6feaad3ff"
           context-github: ${{ toJSON(github) }}
@@ -30,7 +31,5 @@ jobs:
           changeCreationTimeOut: '3600'
           abortOnChangeCreationFailure: true
           abortOnChangeStepTimeout: true
-          deployment-gate: '{"environment":"deploymentgate","jobName":"Deploy"}'
       - name: Output of Change Creation
         run: echo "change-request-number = ${{ steps.create.outputs.change-request-number }}" >> $GITHUB_OUTPUT
-
