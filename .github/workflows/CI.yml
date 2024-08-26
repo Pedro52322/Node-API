@@ -18,7 +18,6 @@ jobs:
     steps:     
       - name: ServiceNow Change
         uses: ServiceNow/servicenow-devops-change@v4.0.0
-        id: create
         with:
           devops-integration-token: "7O48adV0HVjBg5tJDYYSMbeA5LarrH8S"
           instance-url: "https://dev243757.service-now.com/"
